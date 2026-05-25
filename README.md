@@ -66,4 +66,5 @@ All findings are based on openly available information.
 ## Author
 
 Paulo Vaz
+
 https://www.linkedin.com/in/paulohvz/
