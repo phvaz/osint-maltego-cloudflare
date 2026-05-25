@@ -54,30 +54,6 @@ All data collected from public sources only. No active scanning performed.
 
 ---
 
-## Repository Structure
-osint-maltego-cloudflare/
-├── README.md
-├── graphs/
-│   ├── maltego-graph-cloudflare-main.png
-│   └── dns-lookups/
-│       ├── dns-cloudflare-com.png
-│       ├── dns-api-cloudflare-com.png
-│       ├── dns-dash-cloudflare-com.png
-│       ├── dns-cdnjs-cloudflare-com.png
-│       ├── dns-workers-cloudflare-com.png
-│       ├── dns-radar-cloudflare-com.png
-│       ├── dns-blog-cloudflare-com.png
-│       ├── dns-mx-cloudflare-com.png
-│       ├── whois-cloudflare-com.png
-│       ├── whois-ip-104-16-132-229.png
-│       └── whois-as13335-com.png
-└── data/
-└── raw/
-├── dns-findings.md
-├── whois-findings.md
-└── dns-mx-findings.md
-
----
 
 ## Disclaimer
 
