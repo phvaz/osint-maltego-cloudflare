@@ -2,7 +2,7 @@
 
 **Classification:** Public  
 **Date:** 2025-05-23  
-**Analyst:** [Seu nome]  
+**Analyst:** Paulo Vaz  
 **Method:** Passive OSINT — public data sources only  
 
 ---
