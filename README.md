@@ -24,6 +24,25 @@ This project follows a structured OSINT investigation workflow:
 
 All data collected from public sources only. No active scanning performed.
 
+Every data point is recorded in the [collection log](data/raw/collection-log.md) with its
+source, query, and timestamp — the provenance record that makes the collection reproducible.
+
+---
+
+## Analytic standards applied
+
+OSINT is governed by a different standards set than media-based forensics: there is no
+acquisition, no seized artifact, and no chain of custody in the traditional sense. What
+governs an intelligence product instead is **sourcing discipline** and **analytic rigour**.
+
+| Framework | Application in this investigation |
+|---|---|
+| **Admiralty Code** (NATO STANAG 2511) | Each source graded for reliability (A–F) and each item for credibility (1–6). See the Source Reliability Assessment in the report. |
+| **ICD 203** — Analytic Standards | Explicit separation of observed data from analytic judgment; every finding carries a stated confidence level (high / moderate / low). |
+| **ISO/IEC 27043** | Investigation process principles — scope and objectives defined before collection began, preventing an unfocused sweep. |
+| **LGPD / GDPR** | Purpose limitation and necessity applied to operational contact data surfaced in public registries; no enrichment or attribution to individuals. |
+| **Lei 12.737/2012 (Art. 154-A)** | The passive-only method was chosen so that no query touches target systems — the legal boundary between open-source consultation and unauthorized access. |
+
 ---
 
 ## Tools
@@ -38,6 +57,9 @@ All data collected from public sources only. No active scanning performed.
 ---
 
 ## Key Findings
+
+> Findings are confidence-graded in the [full report](reports/findings.md).
+> Two are high-confidence, two moderate, and two are recorded at low confidence and not relied upon.
 
 - Cloudflare operates its entire public infrastructure on its own ASN (AS13335)
 - IP space is segmented by service function within the 104.16.0.0/12 block (1M+ IPs)

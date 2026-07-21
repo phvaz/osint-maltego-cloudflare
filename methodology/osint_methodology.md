@@ -17,6 +17,13 @@ in this project, following structured OSINT principles.
 - Constraints: No active scanning, no unauthorized access
 - Data sources: Open source, publicly available only
 
+**Standards note.** Defining scope, objectives and constraints *before* collection begins
+corresponds to the preparation stage of **ISO/IEC 27043**. It is what separates an
+investigation from an undirected sweep: without a scope statement there is no basis for
+deciding when collection is complete, and no defence against the charge of fishing. The
+explicit "no active scanning" constraint also fixes the legal posture in advance — see the
+Legal and Ethical Context section of the report.
+
 ---
 
 ## Phase 2 — Passive Reconnaissance
@@ -81,10 +88,16 @@ Relationships were established based on:
 | Source documentation | Every finding linked to its source |
 | Evidence-based analysis | No entity added without confirmed data |
 | Methodological transparency | Full process documented here |
+| Source grading | Every source rated under the Admiralty Code (reliability A–F / credibility 1–6) |
+| Fact–judgment separation | Observed data distinguished from analytic inference; confidence stated per finding (ICD 203) |
+| Provenance recording | Source, query and timestamp logged for each data point (`data/raw/collection-log.md`) |
 
 ---
 
 ## Limitations
+
+> Each limitation is analysed together with its impact on the findings in the
+> [full report](../reports/findings.md#limitations).
 
 - Maltego Community Edition restricts the number of transforms available
 - crt.sh API instability required manual subdomain verification via DNS
